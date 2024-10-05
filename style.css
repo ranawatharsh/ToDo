@@ -1,0 +1,44 @@
+.Inpt-Field{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    margin-top: 8vh;
+}
+.Inpt-Field input{
+    margin-right: 10px;
+    padding-top:5px ;
+    padding-bottom: 5px;
+}
+.Inpt-Field button{
+    border-radius: 50%;
+    background-color: rgb(11, 225, 154);
+    /* padding: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px black;
+    font-size: large;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: beige;
+}
+.TodoItems{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 10px;
+    align-items: start;
+}
+.TodoItems button{
+    margin-left: 10px;
+    background-color: red;
+    border: none;
+}
