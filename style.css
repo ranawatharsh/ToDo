@@ -31,7 +31,7 @@ body{
 }
 .TodoItems{
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     justify-content: center;
     flex-direction: row;
     padding-top: 10px;

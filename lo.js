@@ -19,10 +19,19 @@ function AddTodo(){
         alert("Task Cannot Be Empty")
     }
     else {
+    const span=document.createElement("span");
+    const btn=document.createElement("button");
     const newDiv=document.createElement("div");
+    span.innerHTML=value;
+    btn.innerHTML="X";
+    newDiv.appendChild(span);
+    newDiv.appendChild(btn);
     newDiv.setAttribute("id",ctr);
     newDiv.classList.add("TodoItems");
-    newDiv.innerHTML="<div>" +value + '</div><button onclick="DeleteEle('+ ctr +')">X</button>'
+    // btn.onclick("DeleteEle()");
+    btn.setAttribute("onclick","DeleteEle("+ctr+")");
+    // newDiv.innerHTML="<div>" +value + '</div><button onclick="DeleteEle('+ ctr +')">X</button>'
+    
     document.querySelector("Body").appendChild(newDiv);
     ctr=ctr+1;
     ele.value="";
